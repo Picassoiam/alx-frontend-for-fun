@@ -1,0 +1,4 @@
+$greeting: "Hello world";
+
+// Using @debug to print the message to the debug output
+@debug $greeting;
