@@ -1,0 +1,13 @@
+/* My style */
+
+// main.scss
+
+// Import the list of photo names and paths
+@import 'photo-list';
+
+// Loop through each item in the list and create a class with the background image
+@each $name, $path in $list-names {
+  .photo-#{$name} {
+    background: image-url($path) no-repeat;
+  }
+}
