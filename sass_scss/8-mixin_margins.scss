@@ -1,9 +1,17 @@
 /* My style */
 
-$margin-left: 10px;
-$margin-right: 15px;
+// Define the mixin for setting margins
+@mixin set-margins($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
 
-body, div {
-  margin: $margin-left;
-  margin: $margin-right;
-}  
+// Apply the mixin to the body tag
+body {
+  @include set-margins(10px, 10px);
+}
+
+// Apply the mixin to the div tag
+div {
+  @include set-margins(15px, 15px);
+}
