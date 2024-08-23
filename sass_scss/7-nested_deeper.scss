@@ -4,13 +4,14 @@ $font-size-a: 12px;
 $font-size-b: 14px;
 $font-size-c: 16px;
 
-
 body {
   font-size: $font-size-b;
-  body.h1 {
+  
+  h1 {
     font-size: $font-size-c;
-  }
-  body h1.smaller {
-    font-size: $font-size-a;
+    
+    &.smaller {
+      font-size: $font-size-a;
+    }
   }
 }
