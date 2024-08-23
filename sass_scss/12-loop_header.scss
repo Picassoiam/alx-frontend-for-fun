@@ -1,13 +1,16 @@
 /* My style */
 
-// main.scss
+//This Sass code generates H* tags with font sizes ranging from 1px to 5px.
 
-// Import the list of photo names and paths
-@import 'photo-list';
+// The @for statement iterates from 1 to 5.
+@for $i from 1 to 5 {
 
-// Loop through each item in the list and create a class with the background image
-@each $name, $path in $list-names {
-  .photo-#{$name} {
-    background: image-url($path) no-repeat;
+  // For each iteration, it creates an H* tag.
+  // The #{$i} syntax is used to dynamically create the tag name based on the current iteration value.
+  h#{$i} {
+
+    // Sets the font size to the current iteration value multiplied by 1px.
+    // This ensures that the font size increases by 1px for each subsequent H* tag.
+    font-size: $i * 1px;
   }
 }
