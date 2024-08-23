@@ -1,0 +1,21 @@
+/* My style */
+
+// This Sass code applies a font size of 20px to h1 tags, but changes the font size to 14px when the screen width is smaller than 320px.
+
+// The @media query defines a style rule that applies only when the screen width is less than or equal to 320px.
+@media screen and (max-width: 320px) {
+
+  // Within the media query, the h1 selector targets all h1 elements.
+  h1 {
+
+    // Sets the font size to 14px for h1 elements on screens smaller than or equal to 320px.
+    font-size: 14px;
+  }
+}
+
+// This is the default style rule that applies to h1 elements.
+h1 {
+
+  // Sets the default font size to 20px for h1 elements.
+  font-size: 20px;
+}
