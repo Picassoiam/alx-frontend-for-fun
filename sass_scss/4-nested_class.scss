@@ -1,0 +1,13 @@
+/* My style */
+
+$text-color-black: #3D3D3D;
+$text-color-red: #FF0000;
+
+body
+ {
+  color: $text-color-black;
+ }
+  body .red 
+{
+    color: $text-color-red;
+}
