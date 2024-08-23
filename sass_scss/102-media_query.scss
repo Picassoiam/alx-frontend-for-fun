@@ -1,0 +1,50 @@
+/* My style */
+
+// This Sass code applies different font sizes and text colors to h1 tags based on the screen width.
+
+// The @media query defines a style rule that applies only when the screen width is less than or equal to 320px.
+@media screen and (max-width: 320px) {
+
+  // Within the media query, the h1 selector targets all h1 elements.
+  h1 {
+
+    // Sets the font size to 14px for h1 elements on screens smaller than or equal to 320px.
+    font-size: 14px;
+  }
+
+  // The h1.small selector targets h1 elements with the class "small".
+  h1.small {
+
+    // Sets the text color to #1D1D1D for h1.small elements on screens smaller than or equal to 320px.
+    color: #1D1D1D;
+  }
+}
+
+// The @media query defines a style rule that applies only when the screen width is less than or equal to 640px.
+@media screen and (max-width: 640px) {
+
+  // Within the media query, the h1 selector targets all h1 elements.
+  h1 {
+
+    // Sets the font size to 16px for h1 elements on screens smaller than or equal to 640px.
+    font-size: 16px;
+  }
+}
+
+// The @media query defines a style rule that applies only when the screen width is less than or equal to 960px.
+@media screen and (max-width: 960px) {
+
+  // Within the media query, the h1 selector targets all h1 elements.
+  h1 {
+
+    // Sets the font size to 18px for h1 elements on screens smaller than or equal to 960px.
+    font-size: 18px;
+  }
+}
+
+// This is the default style rule that applies to h1 elements.
+h1 {
+
+  // Sets the default font size to 20px for h1 elements.
+  font-size: 20px;
+}
