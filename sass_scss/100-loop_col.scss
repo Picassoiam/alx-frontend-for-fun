@@ -1,0 +1,16 @@
+/* My style */
+
+// This Sass code generates .col-* classes with widths ranging from 100% to 25%.
+
+// The @for statement iterates from 1 to 4.
+@for $i from 1 to 4 {
+
+  // For each iteration, it creates a .col-* class.
+  // The .col-#{$i} syntax is used to dynamically create the class name based on the current iteration value.
+  .col-#{$i} {
+
+    // Sets the width to 100% divided by the current iteration value.
+    // This ensures that the width decreases proportionally as the class number increases.
+    width: 100% / $i;
+  }
+}
