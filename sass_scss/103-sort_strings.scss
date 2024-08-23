@@ -1,6 +1,6 @@
 /* My style */
 
-$list_to_sort: (apple, banana, grape, mango, pineapple);
+$list_to_sort: (anna, carrie, felicia, john, kim, zoe);
 
 // Sorts the list in ascending order using the built-in Sass function sort()
 $sorted_list: sort($list_to_sort);
