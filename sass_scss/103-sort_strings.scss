@@ -1,6 +1,6 @@
 /* My style */
 
-$list_to_sort: (apple, banana, orange, grape, mango, pineapple);
+$list_to_sort: (apple, banana, grape, mango, pineapple);
 
 // Sorts the list in ascending order using the built-in Sass function sort()
 $sorted_list: sort($list_to_sort);
