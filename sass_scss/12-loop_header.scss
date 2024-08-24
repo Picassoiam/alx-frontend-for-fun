@@ -11,6 +11,6 @@
 
     // Sets the font size to the current iteration value multiplied by 1px.
     // This ensures that the font size increases by 1px for each subsequent H* tag.
-    font-size: $i * 1px;
+    font-size: $i + px;
   }
 }
