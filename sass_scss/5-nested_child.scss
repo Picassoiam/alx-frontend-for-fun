@@ -5,9 +5,8 @@ $text-color-red: #FF0000;
 
 body {
   color: $text-color-black;
-
   // Apply text color #FF0000 to any element of class .red that is the first child of the body
-  .red:first-child {
+  Body .red:first-child {
     color: $text-color-red;
   }
 }
