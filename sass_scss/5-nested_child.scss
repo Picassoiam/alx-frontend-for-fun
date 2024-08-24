@@ -1,12 +1,9 @@
 /* My style */
 
-$text-color-black: #3D3D3D;
-$text-color-red: #FF0000;
-
-body {
-  color: $text-color-black;
-  // Apply text color #FF0000 to any element of class .red that is the first child of the body
-  Body .red:first-child {
-    color: $text-color-red;
+  body {
+    color: #3D3D3D; // Default text color for elements inside body
+  
+    .red:first-child {
+      color: #FF0000; // Text color for the first child with class .red inside body
+    }
   }
-}
