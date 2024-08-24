@@ -3,7 +3,7 @@
   body {
     color: #3D3D3D; // Default text color for elements inside body
   
-    .red:first-child {
+    > .red {
       color: #FF0000; // Text color for the first child with class .red inside body
     }
   }
