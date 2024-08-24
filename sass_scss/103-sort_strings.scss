@@ -2,5 +2,3 @@
 
 // Sorts the list in ascending order using the built-in Sass function sort()
 $list_to_sort: (anna, carrie, felicia, john, kim, zoe);
-// Prints the sorted list to the debug output using the built-in Sass function debug()
-@debug $list_to_sort;
