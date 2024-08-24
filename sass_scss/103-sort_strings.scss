@@ -1,9 +1,6 @@
 /* My style */
 
-$list_to_sort: (anna, carrie, felicia, john, kim, zoe);
-
 // Sorts the list in ascending order using the built-in Sass function sort()
-$sorted_list: sort($list_to_sort);
-
+$list_to_sort: (anna, carrie, felicia, john, kim, zoe);
 // Prints the sorted list to the debug output using the built-in Sass function debug()
-@debug $sorted_list;
+@debug $list_to_sort;
