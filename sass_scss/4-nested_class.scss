@@ -3,11 +3,10 @@
 $text-color-black: #3D3D3D;
 $text-color-red: #FF0000;
 
-body
- {
+body {
     color: $text-color-black;
- }
- body.red 
-  {
+
+ body .red {
     color: $text-color-red;
   }
+}
