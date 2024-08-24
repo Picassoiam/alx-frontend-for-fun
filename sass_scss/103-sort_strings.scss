@@ -1,37 +1,7 @@
 /* My style */
-// Define the list
-$list_to_sort: john, anna, zoe, kim, felicia, carrie;
 
-// Sort the list
-@function sort-list($list) {
-  $sorted-list: ();
-  
-  @each $item in $list {
-    $inserted: false;
-    $temp-list: ();
+$list_to_sort: john anna zoe kim felicia carrie;
 
-    @each $sorted-item in $sorted-list {
-      @if str-inserted($item, $sorted-item) {
-        $temp-list: append($temp-list, $item);
-        $inserted: true;
-      }
-      $temp-list: append($temp-list, $sorted-item);
-    }
+$sorted_list: sort($list_to_sort);
 
-    @if not $inserted {
-      $temp-list: append($temp-list, $item);
-    }
-
-    $sorted-list: $temp-list;
-  }
-
-  @return $sorted-list;
-}
-
-// Function to compare strings
-@function str-inserted($a, $b) {
-  @return str-length($a) == str-length($b) and str-slice($a, 1, 1) < str-slice($b, 1, 1);
-}
-
-// Output the sorted list
-@debug sort-list($list_to_sort);
+@debug $sorted_list;
