@@ -1,8 +1,7 @@
 /* My style */
 
 /* sorting list of strings using bubble sort */
-
-@import '103-sort';
+$list_to_sort: john anna zoe kim felicia carrie;
 
 // Function to get the ASCII value of a character
 @function char-code($char) {
